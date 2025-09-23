@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+ul {
+    list-style: none;
+    background-color: #333; /* เปลี่ยนสีพื้นหลังเป็นสีเทาเข้มเพื่อความสวยงาม */
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงเมนูให้เป็นระเบียบ */
+    justify-content: center; /* จัดกึ่งกลางเมนูในแนวนอน */
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    transition: background-color 0.3s; /* เพิ่ม transition เพื่อให้เกิด effect ที่นุ่มนวลเมื่อ hover */
+}
+
+ul li a:hover {
+    background-color: #555; /* เปลี่ยนสีพื้นหลังเมื่อ hover เพื่อให้ดูดีขึ้น */
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเพื่อให้ดูมีมิติ */
+}
+
+ul li:hover > ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown li a {
+    color: #333;
+    padding: 15px 20px; /* ปรับ padding สำหรับเมนูย่อย */
+    text-align: left;
+}
+
+ul li ul.dropdown li a:hover {
+    background-color: #f1f1f1; /* เปลี่ยนสีพื้นหลังเมื่อ hover ที่เมนูย่อย */
+}
+
+/* เพิ่ม CSS สำหรับลูกศร */
+ul li a span {
+    font-size: 16px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
