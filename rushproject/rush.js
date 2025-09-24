@@ -12,10 +12,16 @@ const navHome = document.querySelector('.nav-home');
 
 const data = {
   person1: {
-    name: 'สมชาย',
-    role: 'นักออกแบบกราฟิก',
-    photo: 'images/eren.jpg',
-    about: 'ข้อความยาวๆ ของสมชาย (About)...',
+    name: 'Jirat Lorvitayapan',
+    role: 'Student',
+    photo: 'eren.jpg',
+    about: {
+      fullname: 'Jirat Lorvitayapan',
+      nickname: 'Keng',
+      age: 19,
+      major: 'Computer Science',
+      talent: 'i can make the code run without leg'
+    },
     meta: ['UI/UX','Illustrator','Photoshop','Figma'],
     work: [
       {title:'งาน 1',desc:'รายละเอียดงาน 1'},
@@ -23,28 +29,33 @@ const data = {
       {title:'งาน 3',desc:'รายละเอียดงาน 3'},
     ],
     contact: {
-      github: 'https://github.com/example1',
-      discord: 'https://discord.com/users/1111',
-      ig: 'https://instagram.com/example1',
-      phone: 'tel:+6612345678'
+      github: 'https://github.com/kengjaang',
+      facebook: 'https://www.facebook.com/Kengkung12Keng',
+      ig: 'https://www.instagram.com/kj.chiratt/',
+      
     }
   },
   person2: {
-    name: 'สมหญิง',
-    role: 'นักพัฒนาเว็บ',
-    photo: 'images/mikasa.jpg',
-    about: 'ข้อความยาวๆ ของสมหญิง (About)...',
-    meta: ['HTML','CSS','JavaScript','React'],
+    name: 'Atthakorn Kowing',
+    role: 'Student',
+    photo: 'mikasa.jpg',
+    about: {
+      fullname: 'Atthakorn Kowing',
+      nickname: 'Premier',
+      age: 18,
+      major: 'Computer Science',
+      talent: 'I can use python without snake'
+    },
+    meta: ['HTML','CSS','CAPCUT'],
     work: [
-      {title:'โปรเจกต์ A',desc:'รายละเอียดโปรเจกต์ A'},
+      {title:'Premier Adventure Game',desc:'เกมแนวตะลุยด่านแบบแพลตฟอร์ม 2 มิติผสมแนว Parkour โดยมีอุปสรรคเป็นเหล่ากับดักที่คนเล่นจะต้องหาทางลบเลี่ยงให้ได้โดยมี Goal ที่เรียบง่ายคือการตะลุยไปจนถึงด่านสุดท้ายของเกมส์'},
       {title:'โปรเจกต์ B',desc:'รายละเอียดโปรเจกต์ B'},
       {title:'โปรเจกต์ C',desc:'รายละเอียดโปรเจกต์ C'},
     ],
     contact: {
-      github: 'https://github.com/example2',
-      discord: 'https://discord.com/users/2222',
-      ig: 'https://instagram.com/example2',
-      phone: 'tel:+6698765432'
+      github: 'https://github.com/Premiersss',
+      facebook: 'https://www.facebook.com/atthakorn.koweing',
+      ig: 'https://www.instagram.com/premiersssss/',
     }
   }
 };
@@ -59,7 +70,13 @@ document.querySelectorAll('.avatar').forEach(el=>{
     // แสดงรูป Profile
     profilePhoto.innerHTML = `<img src="${info.photo}" alt="${info.name}">`;
 
-    about.textContent = info.about;
+      about.innerHTML = `
+      <p><strong>name:</strong> ${info.about.fullname}</p>
+      <p><strong>nickname:</strong> ${info.about.nickname}</p>
+      <p><strong>age:</strong> ${info.about.age} ปี</p>
+      <p><strong>major:</strong> ${info.about.major}</p>
+      <p><strong>talent:</strong> ${info.about.talent}</p>
+    `;
 
     meta.innerHTML='';
     info.meta.forEach(m=>{
@@ -78,9 +95,8 @@ document.querySelectorAll('.avatar').forEach(el=>{
 
     contact.innerHTML = `
       <a href="${info.contact.github}" target="_blank">GitHub</a>
-      <a href="${info.contact.discord}" target="_blank">Discord</a>
+      <a href="${info.contact.facebook}" target="_blank">Facebook</a>
       <a href="${info.contact.ig}" target="_blank">Instagram</a>
-      <a href="${info.contact.phone}">Phone</a>
     `;
 
     home.style.display='none';
