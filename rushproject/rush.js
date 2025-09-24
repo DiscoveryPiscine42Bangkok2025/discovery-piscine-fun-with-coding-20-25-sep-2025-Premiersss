@@ -14,7 +14,7 @@ const data = {
   person1: {
     name: 'Jirat Lorvitayapan',
     role: 'Student',
-    photo: 'images/eren.jpg',
+    photo: 'images/keng.jpg',
     about: {
       fullname: 'Jirat Lorvitayapan',
       nickname: 'Keng',
