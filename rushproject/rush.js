@@ -14,7 +14,7 @@ const data = {
   person1: {
     name: 'Jirat Lorvitayapan',
     role: 'Student',
-    photo: 'eren.jpg',
+    photo: 'images/eren.jpg',
     about: {
       fullname: 'Jirat Lorvitayapan',
       nickname: 'Keng',
@@ -24,9 +24,7 @@ const data = {
     },
     meta: ['UI/UX','Illustrator','Photoshop','Figma'],
     work: [
-      {title:'งาน 1',desc:'รายละเอียดงาน 1'},
-      {title:'งาน 2',desc:'รายละเอียดงาน 2'},
-      {title:'งาน 3',desc:'รายละเอียดงาน 3'},
+      {title:'Premier Adventure Game',desc:'เกมแนวตะลุยด่านแบบแพลตฟอร์ม 2 มิติผสมแนว Parkour โดยมีอุปสรรคเป็นเหล่ากับดักที่คนเล่นจะต้องหาทางลบเลี่ยงให้ได้โดยมี Goal ที่เรียบง่ายคือการตะลุยไปจนถึงด่านสุดท้ายของเกมส์'},
     ],
     contact: {
       github: 'https://github.com/kengjaang',
@@ -38,7 +36,7 @@ const data = {
   person2: {
     name: 'Atthakorn Kowing',
     role: 'Student',
-    photo: 'mikasa.jpg',
+    photo: 'images/premier.jpg',
     about: {
       fullname: 'Atthakorn Kowing',
       nickname: 'Premier',
@@ -49,8 +47,6 @@ const data = {
     meta: ['HTML','CSS','CAPCUT'],
     work: [
       {title:'Premier Adventure Game',desc:'เกมแนวตะลุยด่านแบบแพลตฟอร์ม 2 มิติผสมแนว Parkour โดยมีอุปสรรคเป็นเหล่ากับดักที่คนเล่นจะต้องหาทางลบเลี่ยงให้ได้โดยมี Goal ที่เรียบง่ายคือการตะลุยไปจนถึงด่านสุดท้ายของเกมส์'},
-      {title:'โปรเจกต์ B',desc:'รายละเอียดโปรเจกต์ B'},
-      {title:'โปรเจกต์ C',desc:'รายละเอียดโปรเจกต์ C'},
     ],
     contact: {
       github: 'https://github.com/Premiersss',
